@@ -1,0 +1,45 @@
+
+<div class="col-md-3">
+<button ng-click="showForm1()" class="btn btn-success">Phase 1</button></br></br>
+<button ng-click="showForm2()" class="btn btn-success">Phase 2</button></br></br>
+<button ng-click="showForm3()" class="btn btn-success">Phase 3</button></br></br>
+<button ng-click="showForm4()" class="btn btn-success">Phase 4</button>
+</div>
+
+<div class="col-md-9">
+
+<p ng-show ="myVar1">
+Car Name: <input type="text" placeholder="Enter car name" ng-model="carName"></br></br>
+Car Model: <input type="text" placeholder="Enter car model" ng-model="carModel"></br></br>
+Car Color: <input type="text" placeholder="Enter car color" ng-model="carColor"></br></br>
+<button type="button" ng-click="showForm2()" class="btn btn-success">Submit</button>
+</p>
+
+
+<p ng-show ="myVar2">
+Car Mileage: <input type="text" placeholder="Enter car mileage" ng-model="carMileage"></br></br>
+Car Seat: <input type="text" placeholder="Enter no. of car seats" ng-model="carSeat"></br></br>
+Car Type: <input type="text" placeholder="Enter the type of car" ng-model="carType"></br></br>
+Car Grade: <input type="text" placeholder="want to keep a new or 2nd hand model" ng-model="carGrade"></br></br>
+<button type="button" ng-click="showForm3()" class="btn btn-success">Submit</button>
+</p>
+
+
+<p ng-show ="myVar3">
+Choose an image: <br>
+<input type="file" id="files">
+<button type="button" ng-click="showForm4()" class="btn btn-success">Submit</button>
+</p>
+
+
+<p ng-show ="myVar4">
+Enter the data to view the graph:</br> 
+<input type="text" placeholder="..." ng-model="plotpoint1"></br></br>
+<input type="text" placeholder="..." ng-model="plotpoint2"></br></br>
+<input type="text" placeholder="..." ng-model="plotpoint3"></br></br>
+<input type="text" placeholder="..." ng-model="plotpoint4"></br></br>
+<input type="text" placeholder="..." ng-model="plotpoint5"></br></br>
+<button type="button" class="btn btn-success" ng-click="blop()">Submit</button>
+</p>
+
+</div>

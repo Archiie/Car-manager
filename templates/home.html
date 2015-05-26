@@ -1,0 +1,41 @@
+	<div class="col-md-3">
+			<input type="text" placeholder="Add a car" ng-model="enteredCar">
+			<button type="button" class="btn btn-success" ng-click="store()">Add Car</button></br>
+			<div ng-repeat="name in names">
+			{{name}}
+			<input type="button" class="btn btn-info" value="phase1" ng-click="phase()"><br><br>
+			</div>
+
+	</div>
+
+	<div class="col-md-6">
+	<div ng-repeat="x in cDetails ">
+		<div id="form1">
+		<img src="{{x.img}}" class="thumb">
+		<div>
+			Name:{{x.name}}</br>
+			Model:{{x.model}}</br>
+			Color:{{x.color}}</br>
+			Mileage:{{x.mileage}}</br>
+		</div>
+		</div>
+	</div>
+	</div>
+
+	<div class="col-md-3">
+			<input type="text" placeholder="Search a car" ng-model="searchCar" ng-change="search()">
+			<button type="button" class="btn btn-success" ng-click="fail()">Search</button></br>
+
+
+			<div ng-hide="value">
+			<div ng-repeat="x in cDetails | filter:searchFilter">
+			<img src="{{x.img}}" class="thumb">
+			<div>
+			Name:{{x.name}}</br>
+			Model:{{x.model}}</br>
+			Color:{{x.color}}</br>
+			Mileage:{{x.mileage}}</br>
+			</div>
+			</div>
+			</div>
+	</div>

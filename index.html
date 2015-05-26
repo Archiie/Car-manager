@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <title>Bootstrap</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+  <script src="http://code.highcharts.com/highcharts.js"></script>
+  <script src="http://code.highcharts.com/modules/exporting.js"></script>
+
+
+</head>
+
+
+<body ng-app="sampleApp">
+
+<div class="container">
+  <div class="jumbotron">
+    <h1>CAR  MANAGER<small>cars you love to watch</small><h1>
+    <!--<&nbsp;<img src="images/car4.jpg"  align="middle"/>-->
+  </div>
+
+
+  
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Car Manager</a>
+      </div>
+      
+      <div>
+        <ul class="nav navbar-nav">
+                <li class="active"><a href="#Home">Home</a></li>
+		            <li><a href="#Phases">Phases</a></li>
+		            <li><a href="#ShowDetails">Show Details</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    
+        <div class="row">
+        <div ng-view id="exmp">
+
+        </div>
+        </div>
+</div>
+<!--<div class="footer" >copyright@Tcs</div>-->
+<script src="https://rawgithub.com/gsklee/ngStorage/master/ngStorage.js"></script>
+<script src="app.js"></script>
+
+<script src="controller/cont1.js"></script>
+<script src="controller/cont2.js"></script>
+<script src="controller/cont3.js"></script>
+
+</body>
+
+</html>
